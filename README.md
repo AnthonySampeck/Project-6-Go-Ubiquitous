@@ -3,6 +3,13 @@ Advanced Android Sample App
 
 Synchronizes weather information from OpenWeatherMap on Android Phones and Tablets. Used in the Udacity Advanced Android course.
 
+For the sixth project in Udacity's Android Nanodegree, I built a wearable watch face for Sunshine to run on an Android Wear device.  
+  
+This project demonstrates the ability to do the following:  
+*Understand the fundamentals of Android Wear.  
+*Design for multiple watch form factors.  
+*Communicate between a mobile device and a wearable device.
+
 Pre-requisites
 --------------
 Android SDK 21 or Higher
