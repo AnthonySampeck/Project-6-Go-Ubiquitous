@@ -333,32 +333,14 @@ public class DigitalWatchFaceService extends CanvasWatchFaceService {
 
             if (mWeather != null && mHigh !=null && mLow !=null) {
 
-            /*
-                if (mWeather.equals("snow")) {
-                    mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.art_snow);
-                }
-
-                if (mWeather.equals("clear")) {
-                    mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.art_clear);
-                }
-
-                if (mWeather.equals("Rain")){
-                    mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.art_rain);
-                }
-
-*/
 
                 int imageNumber = getResources().getIdentifier(mWeather, "drawable", getPackageName());
 
                 mBitmap = BitmapFactory.decodeResource(getResources(), imageNumber);
 
-
-
                 Bitmap bResized = Bitmap.createScaledBitmap(mBitmap, 70, 70, true);
 
-
                 canvas.drawBitmap(bResized, mXOffset + 10, mYOffset + 20, mTextPaint2);
-
 
                 canvas.drawText(text2, mXOffset + 80, mYOffset + 70, mTextPaint2);
 
